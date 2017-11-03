@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classcppurses_1_1Painter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">cppurses::Painter Class Reference</div>  </div>
@@ -75,12 +76,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa18728d448ebc970024458b6565f75e7"><td class="memItemLeft" align="right" valign="top"><a id="aa18728d448ebc970024458b6565f75e7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Painter</b> (<a class="el" href="classcppurses_1_1Widget.html">Widget</a> *widget)</td></tr>
 <tr class="separator:aa18728d448ebc970024458b6565f75e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f74de7e29b7e4d40fc0c1a7c3989d8f"><td class="memItemLeft" align="right" valign="top"><a id="a8f74de7e29b7e4d40fc0c1a7c3989d8f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (const <a class="el" href="classcppurses_1_1Glyph__string.html">Glyph_string</a> &amp;string, std::size_t x=0, std::size_t y=0, bool move_cursor=false)</td></tr>
-<tr class="separator:a8f74de7e29b7e4d40fc0c1a7c3989d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d46cc405b39dc2aa32203abfd2dac82"><td class="memItemLeft" align="right" valign="top"><a id="a4d46cc405b39dc2aa32203abfd2dac82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (const <a class="el" href="classcppurses_1_1Glyph__string.html">Glyph_string</a> &amp;string, <a class="el" href="structcppurses_1_1Coordinates.html">Coordinates</a> position, bool move_cursor=false)</td></tr>
-<tr class="separator:a4d46cc405b39dc2aa32203abfd2dac82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fe821944f9a502667a8fb9a0342058"><td class="memItemLeft" align="right" valign="top"><a id="a44fe821944f9a502667a8fb9a0342058"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (const <a class="el" href="classcppurses_1_1Glyph__string.html">Glyph_string</a> &amp;text, <a class="el" href="structcppurses_1_1Point.html">Point</a> position)</td></tr>
+<tr class="separator:a44fe821944f9a502667a8fb9a0342058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3fdcd4602790c3303207863b90519b"><td class="memItemLeft" align="right" valign="top"><a id="a7d3fdcd4602790c3303207863b90519b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (const <a class="el" href="classcppurses_1_1Glyph__string.html">Glyph_string</a> &amp;text, std::size_t x, std::size_t y)</td></tr>
+<tr class="separator:a7d3fdcd4602790c3303207863b90519b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee916d0b79dd048036deec185bcbfd3c"><td class="memItemLeft" align="right" valign="top"><a id="aee916d0b79dd048036deec185bcbfd3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>put</b> (const <a class="el" href="classcppurses_1_1Glyph__string.html">Glyph_string</a> &amp;text)</td></tr>
+<tr class="separator:aee916d0b79dd048036deec185bcbfd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db9aa7e1528beacc62723b7426b72f9"><td class="memItemLeft" align="right" valign="top"><a id="a2db9aa7e1528beacc62723b7426b72f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fill</b> (std::size_t x, std::size_t y, std::size_t width, std::size_t height, const <a class="el" href="classcppurses_1_1Glyph.html">Glyph</a> &amp;tile)</td></tr>
 <tr class="separator:a2db9aa7e1528beacc62723b7426b72f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,15 +92,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>fill</b> (std::size_t
 void&#160;</td><td class="memItemRight" valign="bottom"><b>line</b> (std::size_t x1, std::size_t y1, std::size_t x2, std::size_t y2, const <a class="el" href="classcppurses_1_1Glyph__string.html">Glyph_string</a> &amp;gs=&quot;-&quot;)</td></tr>
 <tr class="separator:aca225d6fae17a5b05ce1be7bcb2c35bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf44117973729803173dad1acc37071"><td class="memItemLeft" align="right" valign="top"><a id="a9bf44117973729803173dad1acc37071"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>border</b> (const <a class="el" href="classcppurses_1_1Border.html">Border</a> &amp;b)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>border</b> (const <a class="el" href="structcppurses_1_1Border.html">Border</a> &amp;b)</td></tr>
 <tr class="separator:a9bf44117973729803173dad1acc37071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6ee9e24656d677f18622db08bd5a62"><td class="memItemLeft" align="right" valign="top"><a id="a5c6ee9e24656d677f18622db08bd5a62"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear_screen</b> ()</td></tr>
 <tr class="separator:a5c6ee9e24656d677f18622db08bd5a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aff04d25c58712392408e586685d3372d"><td class="memItemLeft" align="right" valign="top"><a id="aff04d25c58712392408e586685d3372d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>move_cursor_on_put</b> {false}</td></tr>
+<tr class="separator:aff04d25c58712392408e586685d3372d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/anthony/Documents/C++/Projects/CPPurses/src/CPPurses/include/cppurses/painter_module/<a class="el" href="painter_8hpp_source.html">painter.hpp</a></li>
-<li>/home/anthony/Documents/C++/Projects/CPPurses/src/CPPurses/src/painter_module/painter.cpp</li>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/include/cppurses/painter/<a class="el" href="painter_8hpp_source.html">painter.hpp</a></li>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/src/painter/painter.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

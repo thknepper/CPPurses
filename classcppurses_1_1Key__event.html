@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classcppurses_1_1Key__event-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">cppurses::Key_event Class Reference</div>  </div>
@@ -75,89 +76,118 @@ Inheritance diagram for cppurses::Key_event:</div>
  <div class="center">
   <img src="classcppurses_1_1Key__event.png" usemap="#cppurses::Key_5Fevent_map" alt=""/>
   <map id="cppurses::Key_5Fevent_map" name="cppurses::Key_5Fevent_map">
-<area href="classcppurses_1_1Event.html" alt="cppurses::Event" shape="rect" coords="0,0,130,24"/>
+<area href="classcppurses_1_1Input__event.html" alt="cppurses::Input_event" shape="rect" coords="94,56,273,80"/>
+<area href="classcppurses_1_1Event.html" alt="cppurses::Event" shape="rect" coords="94,0,273,24"/>
+<area href="classcppurses_1_1Key__press__event.html" alt="cppurses::Key_press_event" shape="rect" coords="0,168,179,192"/>
+<area href="classcppurses_1_1Key__release__event.html" alt="cppurses::Key_release_event" shape="rect" coords="189,168,368,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e0c12e0e09ed6cafca26b8b6a09c1cf"><td class="memItemLeft" align="right" valign="top"><a id="a3e0c12e0e09ed6cafca26b8b6a09c1cf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Key_event</b> (Event::Type type, int key_code)</td></tr>
-<tr class="separator:a3e0c12e0e09ed6cafca26b8b6a09c1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47f0e48d8598195229fa51115982202b"><td class="memItemLeft" align="right" valign="top"><a id="a47f0e48d8598195229fa51115982202b"></a>
-Key&#160;</td><td class="memItemRight" valign="bottom"><b>key_code</b> () const</td></tr>
-<tr class="separator:a47f0e48d8598195229fa51115982202b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41d4d28998e529a66eed1017036009f"><td class="memItemLeft" align="right" valign="top"><a id="ad41d4d28998e529a66eed1017036009f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>text</b> () const</td></tr>
-<tr class="separator:ad41d4d28998e529a66eed1017036009f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7399df2bb3d4224bcf6d3178fe1a9b"><td class="memItemLeft" align="right" valign="top"><a id="a2a7399df2bb3d4224bcf6d3178fe1a9b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Key_event</b> (Event::Type type, <a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver, Key key_code)</td></tr>
+<tr class="separator:a2a7399df2bb3d4224bcf6d3178fe1a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcppurses_1_1Event"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcppurses_1_1Event')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcppurses_1_1Event.html">cppurses::Event</a></td></tr>
-<tr class="memitem:a7c1e8b726d54ec097e60115be206ae7b inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a7c1e8b726d54ec097e60115be206ae7b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (Type type)</td></tr>
-<tr class="separator:a7c1e8b726d54ec097e60115be206ae7b inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bd934db23b345f154609e1f57fe466 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a53bd934db23b345f154609e1f57fe466"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (Type type, <a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver)</td></tr>
+<tr class="separator:a53bd934db23b345f154609e1f57fe466 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df6ba070962caf1b1e9a983e8273dcf inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a2df6ba070962caf1b1e9a983e8273dcf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (const <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;)=default</td></tr>
 <tr class="separator:a2df6ba070962caf1b1e9a983e8273dcf inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e52c6b468300c39a3ce9e7be04c0fae inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a2e52c6b468300c39a3ce9e7be04c0fae"></a>
 <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;)=default</td></tr>
 <tr class="separator:a2e52c6b468300c39a3ce9e7be04c0fae inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ef9eb66b2a414a2ad6b7cdf2891450 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="ab5ef9eb66b2a414a2ad6b7cdf2891450"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:ab5ef9eb66b2a414a2ad6b7cdf2891450 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af73eb3ab33299336bd0f2b6c7fc31d3e inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="af73eb3ab33299336bd0f2b6c7fc31d3e"></a>
-<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:af73eb3ab33299336bd0f2b6c7fc31d3e inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076c589e40cc94e7fea02990c5a8d0c9 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a076c589e40cc94e7fea02990c5a8d0c9"></a>
+<tr class="memitem:a5b43beac62127e7df79d4f4b35007e90 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a5b43beac62127e7df79d4f4b35007e90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a5b43beac62127e7df79d4f4b35007e90 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2987a502680349a87fd84aa0e0eb7394 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a2987a502680349a87fd84aa0e0eb7394"></a>
+<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a2987a502680349a87fd84aa0e0eb7394 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06673311bed05afb506ed4d335626517 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a06673311bed05afb506ed4d335626517"></a>
 Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
-<tr class="separator:a076c589e40cc94e7fea02990c5a8d0c9 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a06673311bed05afb506ed4d335626517 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cc6f1717ed83e38f3f1f3982f1c01d inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="af7cc6f1717ed83e38f3f1f3982f1c01d"></a>
+<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver</b> () const</td></tr>
+<tr class="separator:af7cc6f1717ed83e38f3f1f3982f1c01d inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad715304d1f55bc6029bacd76e291eabf inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="ad715304d1f55bc6029bacd76e291eabf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_receiver</b> (<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver)</td></tr>
+<tr class="separator:ad715304d1f55bc6029bacd76e291eabf inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b0bb09c1a8faf65da53a3be3e0e720 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a02b0bb09c1a8faf65da53a3be3e0e720"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>send_to_all_filters</b> () const</td></tr>
+<tr class="separator:a02b0bb09c1a8faf65da53a3be3e0e720 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde833f6f93f2242d1e330f610a8233b inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="abde833f6f93f2242d1e330f610a8233b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> () const =0</td></tr>
+<tr class="separator:abde833f6f93f2242d1e330f610a8233b inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110682137e51e1fd64ebb0a3bc74b553 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a110682137e51e1fd64ebb0a3bc74b553"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>filter_send</b> (<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *filter) const =0</td></tr>
+<tr class="separator:a110682137e51e1fd64ebb0a3bc74b553 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad119c89da1d8e38c37e59413ad85482b"><td class="memItemLeft" align="right" valign="top"><a id="ad119c89da1d8e38c37e59413ad85482b"></a>
+const Key&#160;</td><td class="memItemRight" valign="bottom"><b>key_code_</b></td></tr>
+<tr class="separator:ad119c89da1d8e38c37e59413ad85482b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcppurses_1_1Input__event"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcppurses_1_1Input__event')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcppurses_1_1Input__event.html">cppurses::Input_event</a></td></tr>
+<tr class="memitem:a3e6abe98b0daa3b3799387d4b13b11cb inherit pro_attribs_classcppurses_1_1Input__event"><td class="memItemLeft" align="right" valign="top"><a id="a3e6abe98b0daa3b3799387d4b13b11cb"></a>
+KeyboardModifiers&#160;</td><td class="memItemRight" valign="bottom"><b>modifiers_</b></td></tr>
+<tr class="separator:a3e6abe98b0daa3b3799387d4b13b11cb inherit pro_attribs_classcppurses_1_1Input__event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classcppurses_1_1Event"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcppurses_1_1Event')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcppurses_1_1Event.html">cppurses::Event</a></td></tr>
+<tr class="memitem:ac5ea5c4befb4f76fbe0336a23628f1dc inherit pro_attribs_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="ac5ea5c4befb4f76fbe0336a23628f1dc"></a>
+const Type&#160;</td><td class="memItemRight" valign="bottom"><b>type_</b></td></tr>
+<tr class="separator:ac5ea5c4befb4f76fbe0336a23628f1dc inherit pro_attribs_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f614c4a7b2bf97e9cd52bb25cfd8c37 inherit pro_attribs_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a8f614c4a7b2bf97e9cd52bb25cfd8c37"></a>
+<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver_</b></td></tr>
+<tr class="separator:a8f614c4a7b2bf97e9cd52bb25cfd8c37 inherit pro_attribs_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classcppurses_1_1Input__event"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcppurses_1_1Input__event')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classcppurses_1_1Input__event.html">cppurses::Input_event</a></td></tr>
+<tr class="memitem:a3f875b44c4e9963e5c6a6104e5a87632 inherit pub_types_classcppurses_1_1Input__event"><td class="memItemLeft" align="right" valign="top"><a id="a3f875b44c4e9963e5c6a6104e5a87632"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>KeyboardModifiers</b> { <b>None</b>
+ }</td></tr>
+<tr class="separator:a3f875b44c4e9963e5c6a6104e5a87632 inherit pub_types_classcppurses_1_1Input__event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classcppurses_1_1Event"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcppurses_1_1Event')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classcppurses_1_1Event.html">cppurses::Event</a></td></tr>
 <tr class="memitem:a87b4bccc072f1923175d660847f5ae7b inherit pub_types_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a87b4bccc072f1923175d660847f5ae7b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <br />
 &#160;&#160;<b>None</b>, 
-<b>Timer</b>, 
 <b>MouseButtonPress</b>, 
 <b>MouseButtonRelease</b>, 
+<b>MouseButtonDblClick</b>, 
 <br />
-&#160;&#160;<b>MouseButtonDblClick</b>, 
-<b>MouseButtonTplClick</b>, 
-<b>Wheel</b>, 
+&#160;&#160;<b>MouseWheel</b>, 
 <b>MouseMove</b>, 
-<br />
-&#160;&#160;<b>KeyPress</b>, 
+<b>KeyPress</b>, 
 <b>KeyRelease</b>, 
-<b>FocusIn</b>, 
-<b>FocusOut</b>, 
 <br />
-&#160;&#160;<b>Enter</b>, 
-<b>Leave</b>, 
+&#160;&#160;<b>FocusIn</b>, 
+<b>FocusOut</b>, 
 <b>ClearScreen</b>, 
 <b>Paint</b>, 
 <br />
 &#160;&#160;<b>Move</b>, 
 <b>Resize</b>, 
-<b>Create</b>, 
-<b>Destroy</b>, 
-<br />
-&#160;&#160;<b>Show</b>, 
+<b>Show</b>, 
 <b>Hide</b>, 
+<br />
+&#160;&#160;<b>OnTree</b>, 
 <b>Close</b>, 
 <b>ChildAdded</b>, 
+<b>ChildRemoved</b>, 
 <br />
 &#160;&#160;<b>ChildPolished</b>, 
-<b>ChildRemoved</b>, 
-<b>EnabledChange</b>, 
+<b>Enable</b>, 
+<b>Disable</b>, 
 <b>DeferredDelete</b>
 <br />
  }</td></tr>
 <tr class="separator:a87b4bccc072f1923175d660847f5ae7b inherit pub_types_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classcppurses_1_1Event"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcppurses_1_1Event')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcppurses_1_1Event.html">cppurses::Event</a></td></tr>
-<tr class="memitem:a991d2acf86f1114a3a67c1fbd4202492 inherit pro_attribs_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a991d2acf86f1114a3a67c1fbd4202492"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>type_</b></td></tr>
-<tr class="separator:a991d2acf86f1114a3a67c1fbd4202492 inherit pro_attribs_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classcppurses_1_1Input__event"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classcppurses_1_1Input__event')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classcppurses_1_1Input__event.html">cppurses::Input_event</a></td></tr>
+<tr class="memitem:a487502103cfa4fa54b54fc18b366bf7f inherit pro_methods_classcppurses_1_1Input__event"><td class="memItemLeft" align="right" valign="top"><a id="a487502103cfa4fa54b54fc18b366bf7f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Input_event</b> (Event::Type type, <a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver)</td></tr>
+<tr class="separator:a487502103cfa4fa54b54fc18b366bf7f inherit pro_methods_classcppurses_1_1Input__event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/anthony/Documents/C++/Projects/CPPurses/src/CPPurses/include/cppurses/system_module/events/<a class="el" href="key__event_8hpp_source.html">key_event.hpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/include/cppurses/system/events/<a class="el" href="key__event_8hpp_source.html">key_event.hpp</a></li>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/src/system/key_event.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

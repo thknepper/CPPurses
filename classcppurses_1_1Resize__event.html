@@ -82,105 +82,100 @@ Inheritance diagram for cppurses::Resize_event:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7101a07cdeb175c50e69d77d96c0b4fc"><td class="memItemLeft" align="right" valign="top"><a id="a7101a07cdeb175c50e69d77d96c0b4fc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Resize_event</b> (std::size_t new_width, std::size_t new_height, std::size_t old_width=0, std::size_t old_height=0)</td></tr>
-<tr class="separator:a7101a07cdeb175c50e69d77d96c0b4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84bfd1f488cf995c1d13c042c396ff96"><td class="memItemLeft" align="right" valign="top"><a id="a84bfd1f488cf995c1d13c042c396ff96"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>old_width</b> () const</td></tr>
-<tr class="separator:a84bfd1f488cf995c1d13c042c396ff96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd7705f48f834d73e27b3ba357d1feb"><td class="memItemLeft" align="right" valign="top"><a id="a8dd7705f48f834d73e27b3ba357d1feb"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>old_height</b> () const</td></tr>
-<tr class="separator:a8dd7705f48f834d73e27b3ba357d1feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e9f1e7fe8067da8380f54051e882ee7"><td class="memItemLeft" align="right" valign="top"><a id="a3e9f1e7fe8067da8380f54051e882ee7"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>new_width</b> () const</td></tr>
-<tr class="separator:a3e9f1e7fe8067da8380f54051e882ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8985de6d714cb660ffd68b17f8a539d1"><td class="memItemLeft" align="right" valign="top"><a id="a8985de6d714cb660ffd68b17f8a539d1"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>new_height</b> () const</td></tr>
-<tr class="separator:a8985de6d714cb660ffd68b17f8a539d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae254afe76f1aa5200a0ca0e81b8cd504"><td class="memItemLeft" align="right" valign="top"><a id="ae254afe76f1aa5200a0ca0e81b8cd504"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Resize_event</b> (<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver, <a class="el" href="structcppurses_1_1Area.html">Area</a> new_size, <a class="el" href="structcppurses_1_1Area.html">Area</a> old_size=<a class="el" href="structcppurses_1_1Area.html">Area</a>{0, 0})</td></tr>
+<tr class="separator:ae254afe76f1aa5200a0ca0e81b8cd504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b4ffa7db31316f0dc81d32ded2347d"><td class="memItemLeft" align="right" valign="top"><a id="a05b4ffa7db31316f0dc81d32ded2347d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> () const override</td></tr>
+<tr class="separator:a05b4ffa7db31316f0dc81d32ded2347d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14934cde2aaf100edc00b460f4b2478b"><td class="memItemLeft" align="right" valign="top"><a id="a14934cde2aaf100edc00b460f4b2478b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>filter_send</b> (<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *filter) const override</td></tr>
+<tr class="separator:a14934cde2aaf100edc00b460f4b2478b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcppurses_1_1Event"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcppurses_1_1Event')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcppurses_1_1Event.html">cppurses::Event</a></td></tr>
-<tr class="memitem:a7c1e8b726d54ec097e60115be206ae7b inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a7c1e8b726d54ec097e60115be206ae7b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (Type type)</td></tr>
-<tr class="separator:a7c1e8b726d54ec097e60115be206ae7b inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bd934db23b345f154609e1f57fe466 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a53bd934db23b345f154609e1f57fe466"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (Type type, <a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver)</td></tr>
+<tr class="separator:a53bd934db23b345f154609e1f57fe466 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df6ba070962caf1b1e9a983e8273dcf inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a2df6ba070962caf1b1e9a983e8273dcf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (const <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;)=default</td></tr>
 <tr class="separator:a2df6ba070962caf1b1e9a983e8273dcf inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e52c6b468300c39a3ce9e7be04c0fae inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a2e52c6b468300c39a3ce9e7be04c0fae"></a>
 <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;)=default</td></tr>
 <tr class="separator:a2e52c6b468300c39a3ce9e7be04c0fae inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ef9eb66b2a414a2ad6b7cdf2891450 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="ab5ef9eb66b2a414a2ad6b7cdf2891450"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:ab5ef9eb66b2a414a2ad6b7cdf2891450 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af73eb3ab33299336bd0f2b6c7fc31d3e inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="af73eb3ab33299336bd0f2b6c7fc31d3e"></a>
-<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:af73eb3ab33299336bd0f2b6c7fc31d3e inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076c589e40cc94e7fea02990c5a8d0c9 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a076c589e40cc94e7fea02990c5a8d0c9"></a>
+<tr class="memitem:a5b43beac62127e7df79d4f4b35007e90 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a5b43beac62127e7df79d4f4b35007e90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a5b43beac62127e7df79d4f4b35007e90 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2987a502680349a87fd84aa0e0eb7394 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a2987a502680349a87fd84aa0e0eb7394"></a>
+<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a2987a502680349a87fd84aa0e0eb7394 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06673311bed05afb506ed4d335626517 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a06673311bed05afb506ed4d335626517"></a>
 Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
-<tr class="separator:a076c589e40cc94e7fea02990c5a8d0c9 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a06673311bed05afb506ed4d335626517 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cc6f1717ed83e38f3f1f3982f1c01d inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="af7cc6f1717ed83e38f3f1f3982f1c01d"></a>
+<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver</b> () const</td></tr>
+<tr class="separator:af7cc6f1717ed83e38f3f1f3982f1c01d inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad715304d1f55bc6029bacd76e291eabf inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="ad715304d1f55bc6029bacd76e291eabf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_receiver</b> (<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver)</td></tr>
+<tr class="separator:ad715304d1f55bc6029bacd76e291eabf inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b0bb09c1a8faf65da53a3be3e0e720 inherit pub_methods_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a02b0bb09c1a8faf65da53a3be3e0e720"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>send_to_all_filters</b> () const</td></tr>
+<tr class="separator:a02b0bb09c1a8faf65da53a3be3e0e720 inherit pub_methods_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aaa3e16155e3a2f9d57fb80fbf5fb83f7"><td class="memItemLeft" align="right" valign="top"><a id="aaa3e16155e3a2f9d57fb80fbf5fb83f7"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>new_width_</b></td></tr>
-<tr class="separator:aaa3e16155e3a2f9d57fb80fbf5fb83f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750e79d53c33fa0ba235e65030252004"><td class="memItemLeft" align="right" valign="top"><a id="a750e79d53c33fa0ba235e65030252004"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>new_height_</b></td></tr>
-<tr class="separator:a750e79d53c33fa0ba235e65030252004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d8cd0887579e22cefd8ee604a1aa15b"><td class="memItemLeft" align="right" valign="top"><a id="a4d8cd0887579e22cefd8ee604a1aa15b"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>old_width_</b></td></tr>
-<tr class="separator:a4d8cd0887579e22cefd8ee604a1aa15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a617290c063ef313ee5deebab86cf87bf"><td class="memItemLeft" align="right" valign="top"><a id="a617290c063ef313ee5deebab86cf87bf"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>old_height_</b></td></tr>
-<tr class="separator:a617290c063ef313ee5deebab86cf87bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9aa0c7352b1e865cbca63d14c86894"><td class="memItemLeft" align="right" valign="top"><a id="afd9aa0c7352b1e865cbca63d14c86894"></a>
+<a class="el" href="structcppurses_1_1Area.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><b>new_size_</b></td></tr>
+<tr class="separator:afd9aa0c7352b1e865cbca63d14c86894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07b0a2a4f1f174f4bfd01256a6893bf"><td class="memItemLeft" align="right" valign="top"><a id="aa07b0a2a4f1f174f4bfd01256a6893bf"></a>
+<a class="el" href="structcppurses_1_1Area.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><b>old_size_</b></td></tr>
+<tr class="separator:aa07b0a2a4f1f174f4bfd01256a6893bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcppurses_1_1Event"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcppurses_1_1Event')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcppurses_1_1Event.html">cppurses::Event</a></td></tr>
-<tr class="memitem:a991d2acf86f1114a3a67c1fbd4202492 inherit pro_attribs_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a991d2acf86f1114a3a67c1fbd4202492"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>type_</b></td></tr>
-<tr class="separator:a991d2acf86f1114a3a67c1fbd4202492 inherit pro_attribs_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ea5c4befb4f76fbe0336a23628f1dc inherit pro_attribs_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="ac5ea5c4befb4f76fbe0336a23628f1dc"></a>
+const Type&#160;</td><td class="memItemRight" valign="bottom"><b>type_</b></td></tr>
+<tr class="separator:ac5ea5c4befb4f76fbe0336a23628f1dc inherit pro_attribs_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f614c4a7b2bf97e9cd52bb25cfd8c37 inherit pro_attribs_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a8f614c4a7b2bf97e9cd52bb25cfd8c37"></a>
+<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver_</b></td></tr>
+<tr class="separator:a8f614c4a7b2bf97e9cd52bb25cfd8c37 inherit pro_attribs_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classcppurses_1_1Event"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcppurses_1_1Event')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classcppurses_1_1Event.html">cppurses::Event</a></td></tr>
 <tr class="memitem:a87b4bccc072f1923175d660847f5ae7b inherit pub_types_classcppurses_1_1Event"><td class="memItemLeft" align="right" valign="top"><a id="a87b4bccc072f1923175d660847f5ae7b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <br />
 &#160;&#160;<b>None</b>, 
-<b>Timer</b>, 
 <b>MouseButtonPress</b>, 
 <b>MouseButtonRelease</b>, 
+<b>MouseButtonDblClick</b>, 
 <br />
-&#160;&#160;<b>MouseButtonDblClick</b>, 
-<b>MouseButtonTplClick</b>, 
-<b>Wheel</b>, 
+&#160;&#160;<b>MouseWheel</b>, 
 <b>MouseMove</b>, 
-<br />
-&#160;&#160;<b>KeyPress</b>, 
+<b>KeyPress</b>, 
 <b>KeyRelease</b>, 
-<b>FocusIn</b>, 
-<b>FocusOut</b>, 
 <br />
-&#160;&#160;<b>Enter</b>, 
-<b>Leave</b>, 
+&#160;&#160;<b>FocusIn</b>, 
+<b>FocusOut</b>, 
 <b>ClearScreen</b>, 
 <b>Paint</b>, 
 <br />
 &#160;&#160;<b>Move</b>, 
 <b>Resize</b>, 
-<b>Create</b>, 
-<b>Destroy</b>, 
-<br />
-&#160;&#160;<b>Show</b>, 
+<b>Show</b>, 
 <b>Hide</b>, 
+<br />
+&#160;&#160;<b>OnTree</b>, 
 <b>Close</b>, 
 <b>ChildAdded</b>, 
+<b>ChildRemoved</b>, 
 <br />
 &#160;&#160;<b>ChildPolished</b>, 
-<b>ChildRemoved</b>, 
-<b>EnabledChange</b>, 
+<b>Enable</b>, 
+<b>Disable</b>, 
 <b>DeferredDelete</b>
 <br />
  }</td></tr>
 <tr class="separator:a87b4bccc072f1923175d660847f5ae7b inherit pub_types_classcppurses_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/anthony/Documents/C++/Projects/CPPurses/src/CPPurses/include/cppurses/system_module/events/<a class="el" href="resize__event_8hpp_source.html">resize_event.hpp</a></li>
-<li>/home/anthony/Documents/C++/Projects/CPPurses/src/CPPurses/src/system_module/resize_event.cpp</li>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/include/cppurses/system/events/<a class="el" href="resize__event_8hpp_source.html">resize_event.hpp</a></li>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/src/system/resize_event.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

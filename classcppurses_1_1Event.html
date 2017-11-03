@@ -68,7 +68,7 @@ $(function() {
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classcppurses_1_1Event-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">cppurses::Event Class Reference</div>  </div>
+<div class="title">cppurses::Event Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -77,18 +77,21 @@ Inheritance diagram for cppurses::Event:</div>
  <div class="center">
   <img src="classcppurses_1_1Event.png" usemap="#cppurses::Event_map" alt=""/>
   <map id="cppurses::Event_map" name="cppurses::Event_map">
-<area href="classcppurses_1_1Child__event.html" alt="cppurses::Child_event" shape="rect" coords="195,56,380,80"/>
-<area href="classcppurses_1_1Clear__screen__event.html" alt="cppurses::Clear_screen_event" shape="rect" coords="195,112,380,136"/>
-<area href="classcppurses_1_1Close__event.html" alt="cppurses::Close_event" shape="rect" coords="195,168,380,192"/>
-<area href="classcppurses_1_1Enable__event.html" alt="cppurses::Enable_event" shape="rect" coords="195,224,380,248"/>
-<area href="classcppurses_1_1Focus__event.html" alt="cppurses::Focus_event" shape="rect" coords="195,280,380,304"/>
-<area href="classcppurses_1_1Hide__event.html" alt="cppurses::Hide_event" shape="rect" coords="195,336,380,360"/>
-<area href="classcppurses_1_1Input__event.html" alt="cppurses::Input_event" shape="rect" coords="195,392,380,416"/>
-<area href="classcppurses_1_1Key__event.html" alt="cppurses::Key_event" shape="rect" coords="195,448,380,472"/>
-<area href="classcppurses_1_1Move__event.html" alt="cppurses::Move_event" shape="rect" coords="195,504,380,528"/>
-<area href="classcppurses_1_1Paint__event.html" alt="cppurses::Paint_event" shape="rect" coords="195,560,380,584"/>
-<area href="classcppurses_1_1Resize__event.html" alt="cppurses::Resize_event" shape="rect" coords="195,616,380,640"/>
-<area href="classcppurses_1_1Show__event.html" alt="cppurses::Show_event" shape="rect" coords="195,672,380,696"/>
+<area href="classcppurses_1_1Child__event.html" alt="cppurses::Child_event" shape="rect" coords="210,56,410,80"/>
+<area href="classcppurses_1_1Clear__screen__event.html" alt="cppurses::Clear_screen_event" shape="rect" coords="210,112,410,136"/>
+<area href="classcppurses_1_1Close__event.html" alt="cppurses::Close_event" shape="rect" coords="210,168,410,192"/>
+<area href="classcppurses_1_1Deferred__delete__event.html" alt="cppurses::Deferred_delete_event" shape="rect" coords="210,224,410,248"/>
+<area href="classcppurses_1_1Disable__event.html" alt="cppurses::Disable_event" shape="rect" coords="210,280,410,304"/>
+<area href="classcppurses_1_1Enable__event.html" alt="cppurses::Enable_event" shape="rect" coords="210,336,410,360"/>
+<area href="classcppurses_1_1Focus__in__event.html" alt="cppurses::Focus_in_event" shape="rect" coords="210,392,410,416"/>
+<area href="classcppurses_1_1Focus__out__event.html" alt="cppurses::Focus_out_event" shape="rect" coords="210,448,410,472"/>
+<area href="classcppurses_1_1Hide__event.html" alt="cppurses::Hide_event" shape="rect" coords="210,504,410,528"/>
+<area href="classcppurses_1_1Input__event.html" alt="cppurses::Input_event" shape="rect" coords="210,560,410,584"/>
+<area href="classcppurses_1_1Move__event.html" alt="cppurses::Move_event" shape="rect" coords="210,616,410,640"/>
+<area href="classcppurses_1_1On__tree__event.html" alt="cppurses::On_tree_event" shape="rect" coords="210,672,410,696"/>
+<area href="classcppurses_1_1Paint__event.html" alt="cppurses::Paint_event" shape="rect" coords="210,728,410,752"/>
+<area href="classcppurses_1_1Resize__event.html" alt="cppurses::Resize_event" shape="rect" coords="210,784,410,808"/>
+<area href="classcppurses_1_1Show__event.html" alt="cppurses::Show_event" shape="rect" coords="210,840,410,864"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -96,38 +99,33 @@ Inheritance diagram for cppurses::Event:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a87b4bccc072f1923175d660847f5ae7b"><td class="memItemLeft" align="right" valign="top"><a id="a87b4bccc072f1923175d660847f5ae7b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <br />
 &#160;&#160;<b>None</b>, 
-<b>Timer</b>, 
 <b>MouseButtonPress</b>, 
 <b>MouseButtonRelease</b>, 
+<b>MouseButtonDblClick</b>, 
 <br />
-&#160;&#160;<b>MouseButtonDblClick</b>, 
-<b>MouseButtonTplClick</b>, 
-<b>Wheel</b>, 
+&#160;&#160;<b>MouseWheel</b>, 
 <b>MouseMove</b>, 
-<br />
-&#160;&#160;<b>KeyPress</b>, 
+<b>KeyPress</b>, 
 <b>KeyRelease</b>, 
-<b>FocusIn</b>, 
-<b>FocusOut</b>, 
 <br />
-&#160;&#160;<b>Enter</b>, 
-<b>Leave</b>, 
+&#160;&#160;<b>FocusIn</b>, 
+<b>FocusOut</b>, 
 <b>ClearScreen</b>, 
 <b>Paint</b>, 
 <br />
 &#160;&#160;<b>Move</b>, 
 <b>Resize</b>, 
-<b>Create</b>, 
-<b>Destroy</b>, 
-<br />
-&#160;&#160;<b>Show</b>, 
+<b>Show</b>, 
 <b>Hide</b>, 
+<br />
+&#160;&#160;<b>OnTree</b>, 
 <b>Close</b>, 
 <b>ChildAdded</b>, 
+<b>ChildRemoved</b>, 
 <br />
 &#160;&#160;<b>ChildPolished</b>, 
-<b>ChildRemoved</b>, 
-<b>EnabledChange</b>, 
+<b>Enable</b>, 
+<b>Disable</b>, 
 <b>DeferredDelete</b>
 <br />
  }</td></tr>
@@ -135,33 +133,52 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7c1e8b726d54ec097e60115be206ae7b"><td class="memItemLeft" align="right" valign="top"><a id="a7c1e8b726d54ec097e60115be206ae7b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (Type type)</td></tr>
-<tr class="separator:a7c1e8b726d54ec097e60115be206ae7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bd934db23b345f154609e1f57fe466"><td class="memItemLeft" align="right" valign="top"><a id="a53bd934db23b345f154609e1f57fe466"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (Type type, <a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver)</td></tr>
+<tr class="separator:a53bd934db23b345f154609e1f57fe466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df6ba070962caf1b1e9a983e8273dcf"><td class="memItemLeft" align="right" valign="top"><a id="a2df6ba070962caf1b1e9a983e8273dcf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (const <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;)=default</td></tr>
 <tr class="separator:a2df6ba070962caf1b1e9a983e8273dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e52c6b468300c39a3ce9e7be04c0fae"><td class="memItemLeft" align="right" valign="top"><a id="a2e52c6b468300c39a3ce9e7be04c0fae"></a>
 <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;)=default</td></tr>
 <tr class="separator:a2e52c6b468300c39a3ce9e7be04c0fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ef9eb66b2a414a2ad6b7cdf2891450"><td class="memItemLeft" align="right" valign="top"><a id="ab5ef9eb66b2a414a2ad6b7cdf2891450"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:ab5ef9eb66b2a414a2ad6b7cdf2891450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af73eb3ab33299336bd0f2b6c7fc31d3e"><td class="memItemLeft" align="right" valign="top"><a id="af73eb3ab33299336bd0f2b6c7fc31d3e"></a>
-<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;) noexcept=default</td></tr>
-<tr class="separator:af73eb3ab33299336bd0f2b6c7fc31d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a076c589e40cc94e7fea02990c5a8d0c9"><td class="memItemLeft" align="right" valign="top"><a id="a076c589e40cc94e7fea02990c5a8d0c9"></a>
+<tr class="memitem:a5b43beac62127e7df79d4f4b35007e90"><td class="memItemLeft" align="right" valign="top"><a id="a5b43beac62127e7df79d4f4b35007e90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a5b43beac62127e7df79d4f4b35007e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2987a502680349a87fd84aa0e0eb7394"><td class="memItemLeft" align="right" valign="top"><a id="a2987a502680349a87fd84aa0e0eb7394"></a>
+<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classcppurses_1_1Event.html">Event</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a2987a502680349a87fd84aa0e0eb7394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06673311bed05afb506ed4d335626517"><td class="memItemLeft" align="right" valign="top"><a id="a06673311bed05afb506ed4d335626517"></a>
 Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
-<tr class="separator:a076c589e40cc94e7fea02990c5a8d0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a06673311bed05afb506ed4d335626517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cc6f1717ed83e38f3f1f3982f1c01d"><td class="memItemLeft" align="right" valign="top"><a id="af7cc6f1717ed83e38f3f1f3982f1c01d"></a>
+<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver</b> () const</td></tr>
+<tr class="separator:af7cc6f1717ed83e38f3f1f3982f1c01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad715304d1f55bc6029bacd76e291eabf"><td class="memItemLeft" align="right" valign="top"><a id="ad715304d1f55bc6029bacd76e291eabf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_receiver</b> (<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *receiver)</td></tr>
+<tr class="separator:ad715304d1f55bc6029bacd76e291eabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b0bb09c1a8faf65da53a3be3e0e720"><td class="memItemLeft" align="right" valign="top"><a id="a02b0bb09c1a8faf65da53a3be3e0e720"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>send_to_all_filters</b> () const</td></tr>
+<tr class="separator:a02b0bb09c1a8faf65da53a3be3e0e720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde833f6f93f2242d1e330f610a8233b"><td class="memItemLeft" align="right" valign="top"><a id="abde833f6f93f2242d1e330f610a8233b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> () const =0</td></tr>
+<tr class="separator:abde833f6f93f2242d1e330f610a8233b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110682137e51e1fd64ebb0a3bc74b553"><td class="memItemLeft" align="right" valign="top"><a id="a110682137e51e1fd64ebb0a3bc74b553"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>filter_send</b> (<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *filter) const =0</td></tr>
+<tr class="separator:a110682137e51e1fd64ebb0a3bc74b553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a991d2acf86f1114a3a67c1fbd4202492"><td class="memItemLeft" align="right" valign="top"><a id="a991d2acf86f1114a3a67c1fbd4202492"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>type_</b></td></tr>
-<tr class="separator:a991d2acf86f1114a3a67c1fbd4202492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ea5c4befb4f76fbe0336a23628f1dc"><td class="memItemLeft" align="right" valign="top"><a id="ac5ea5c4befb4f76fbe0336a23628f1dc"></a>
+const Type&#160;</td><td class="memItemRight" valign="bottom"><b>type_</b></td></tr>
+<tr class="separator:ac5ea5c4befb4f76fbe0336a23628f1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f614c4a7b2bf97e9cd52bb25cfd8c37"><td class="memItemLeft" align="right" valign="top"><a id="a8f614c4a7b2bf97e9cd52bb25cfd8c37"></a>
+<a class="el" href="classcppurses_1_1Event__handler.html">Event_handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver_</b></td></tr>
+<tr class="separator:a8f614c4a7b2bf97e9cd52bb25cfd8c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/anthony/Documents/C++/Projects/CPPurses/src/CPPurses/include/cppurses/system_module/<a class="el" href="event_8hpp_source.html">event.hpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/include/cppurses/system/<a class="el" href="event_8hpp_source.html">event.hpp</a></li>
+<li>/home/anthony/Documents/C++/Projects/CPPurses/src/system/event.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
