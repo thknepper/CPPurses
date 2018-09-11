@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['vertical_5flayout',['Vertical_layout',['../classcppurses_1_1Vertical__layout.html',1,'cppurses']]],
-  ['vertical_5fscrollbar',['Vertical_scrollbar',['../classcppurses_1_1Vertical__scrollbar.html',1,'cppurses']]]
+  ['user_5finput_5fevent_5floop',['User_input_event_loop',['../classcppurses_1_1detail_1_1User__input__event__loop.html',1,'cppurses::detail']]]
 ];

@@ -2,6 +2,7 @@ var searchData=
 [
   ['matrix_5fdisplay',['Matrix_display',['../classcppurses_1_1Matrix__display.html',1,'cppurses']]],
   ['menu',['Menu',['../classcppurses_1_1Menu.html',1,'cppurses']]],
+  ['mouse_5fdata',['Mouse_data',['../structcppurses_1_1Mouse__data.html',1,'cppurses']]],
   ['mouse_5fdouble_5fclick_5fevent',['Mouse_double_click_event',['../classcppurses_1_1Mouse__double__click__event.html',1,'cppurses']]],
   ['mouse_5fevent',['Mouse_event',['../classcppurses_1_1Mouse__event.html',1,'cppurses']]],
   ['mouse_5fmove_5fevent',['Mouse_move_event',['../classcppurses_1_1Mouse__move__event.html',1,'cppurses']]],
