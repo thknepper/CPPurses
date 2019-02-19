@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['local',['local',['../structcppurses_1_1Mouse__data.html#a563bcd5aa6f4bcaf6b6201fa71898ff0',1,'cppurses::Mouse_data']]]
+  ['insert_5fbrush',['insert_brush',['../classcppurses_1_1Text__display.html#a1dc5c9507a06d613b1abbde6456d40bb',1,'cppurses::Text_display']]]
 ];

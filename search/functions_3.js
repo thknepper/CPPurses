@@ -1,10 +1,20 @@
 var searchData=
 [
+  ['decrement',['decrement',['../classcppurses_1_1detail_1_1Slider__logic.html#a9150e95658a93bcb0bbab9547e2bd57c',1,'cppurses::detail::Slider_logic::decrement()'],['../classcppurses_1_1Vertical__slider.html#a547b5fbe1b9c224394a44f2c3669039b',1,'cppurses::Vertical_slider::decrement()']]],
   ['delete_5fevent',['delete_event',['../classcppurses_1_1Widget.html#a2c79c0329ac245731eecf65318fcbc08',1,'cppurses::Widget']]],
-  ['delete_5fevent_5ffilter',['delete_event_filter',['../classcppurses_1_1Widget.html#a7e83c136ec8951ea4af0e29faed0cc79',1,'cppurses::Widget']]],
+  ['delete_5fevent_5ffilter',['delete_event_filter',['../classcppurses_1_1Widget.html#a404611c1d2e71604d923b92086f5aea1',1,'cppurses::Widget']]],
+  ['delete_5fpage',['delete_page',['../classcppurses_1_1layout_1_1Stack.html#a34de1bf5cd74ee8e5036088311c4aabb',1,'cppurses::layout::Stack']]],
   ['deregister_5fevent_5floop',['deregister_event_loop',['../classcppurses_1_1System.html#a75503cde37965727761eb2e5e71c9717',1,'cppurses::System']]],
-  ['disable',['disable',['../classcppurses_1_1Cursor__data.html#aa8220ab12f0326e9ad8bbd584b3a634c',1,'cppurses::Cursor_data::disable()'],['../classcppurses_1_1Widget.html#a720c46aa57cbf00b8726aeb80de8ca27',1,'cppurses::Widget::disable()']]],
+  ['disable',['disable',['../classcppurses_1_1Border_1_1Segment.html#aa179e40e0d4eb949140268fa5aa8bf68',1,'cppurses::Border::Segment::disable()'],['../classcppurses_1_1Border.html#ada9c4489e4fc2ebc294a8cef4204758a',1,'cppurses::Border::disable()'],['../classcppurses_1_1Cursor__data.html#aa8220ab12f0326e9ad8bbd584b3a634c',1,'cppurses::Cursor_data::disable()'],['../classcppurses_1_1Widget.html#a720c46aa57cbf00b8726aeb80de8ca27',1,'cppurses::Widget::disable()']]],
+  ['disable_5fall',['disable_all',['../structcppurses_1_1Border_1_1Segments.html#a2c10e1096f1bb42fe30878207e7d86ba',1,'cppurses::Border::Segments']]],
   ['disable_5fanimation',['disable_animation',['../classcppurses_1_1Widget.html#a14a32b45a590ab098f142a573102ee6f',1,'cppurses::Widget']]],
+  ['disable_5fcorners',['disable_corners',['../structcppurses_1_1Border_1_1Segments.html#a62a155f2cbc2a6ef2aad1606d2ddfcfb',1,'cppurses::Border::Segments']]],
   ['disable_5fevent',['disable_event',['../classcppurses_1_1Widget.html#a7fdf14b5773efab8428fe89a1299c38f',1,'cppurses::Widget']]],
-  ['disable_5fevent_5ffilter',['disable_event_filter',['../classcppurses_1_1Widget.html#a515fd273ff115133c24ce6a42cac010a',1,'cppurses::Widget']]]
+  ['disable_5fevent_5ffilter',['disable_event_filter',['../classcppurses_1_1Widget.html#ad77875ee305a676ca8a8a9f7b1460675',1,'cppurses::Widget']]],
+  ['disable_5finput',['disable_input',['../classcppurses_1_1Textbox.html#a992978c2f51b32c120b160a728d484c4',1,'cppurses::Textbox']]],
+  ['disable_5fscrollwheel',['disable_scrollwheel',['../classcppurses_1_1Textbox.html#a4f2ec579c1131c87cca59441a7b39c5c',1,'cppurses::Textbox']]],
+  ['disable_5fsides',['disable_sides',['../structcppurses_1_1Border_1_1Segments.html#a9a91d0924473ff9937614d05c2c26f90',1,'cppurses::Border::Segments']]],
+  ['disable_5fword_5fwrap',['disable_word_wrap',['../classcppurses_1_1Text__display.html#af6c954c7d62d92623705a89a72775c13',1,'cppurses::Text_display']]],
+  ['display_5fheight',['display_height',['../classcppurses_1_1Text__display.html#af3dd0b728b46b00472d2a0abd2f63803',1,'cppurses::Text_display']]],
+  ['display_5fposition',['display_position',['../classcppurses_1_1Text__display.html#af25ab5f3774ee2431d11a49aa3454b36',1,'cppurses::Text_display']]]
 ];

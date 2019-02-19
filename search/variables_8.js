@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['moved',['moved',['../classcppurses_1_1Cursor__data.html#a8d7d4a5239f29540da267d593c31ed60',1,'cppurses::Cursor_data']]]
+  ['key',['key',['../structcppurses_1_1Key_1_1State.html#a3b97f34e28dd5c7237a9c5fda51f3591',1,'cppurses::Key::State']]]
 ];

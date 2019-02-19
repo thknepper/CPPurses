@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height_5fpolicy',['height_policy',['../classcppurses_1_1Widget.html#a2e1670502c912138bedf3838123c07e5',1,'cppurses::Widget']]]
+  ['global',['global',['../structcppurses_1_1Mouse_1_1State.html#ad6b146da27463124d2ed06227e771ca2',1,'cppurses::Mouse::State']]]
 ];

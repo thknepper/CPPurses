@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['global',['global',['../structcppurses_1_1Mouse__data.html#a1159ad486a3a26acfdd94d824c568e9c',1,'cppurses::Mouse_data']]]
+  ['focus_5fpolicy',['focus_policy',['../classcppurses_1_1Widget.html#a3a623142df85acbf4b29542a2c8eb1e3',1,'cppurses::Widget']]]
 ];

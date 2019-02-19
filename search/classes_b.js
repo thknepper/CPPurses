@@ -2,12 +2,8 @@ var searchData=
 [
   ['matrix_5fdisplay',['Matrix_display',['../classcppurses_1_1Matrix__display.html',1,'cppurses']]],
   ['menu',['Menu',['../classcppurses_1_1Menu.html',1,'cppurses']]],
-  ['mouse_5fdata',['Mouse_data',['../structcppurses_1_1Mouse__data.html',1,'cppurses']]],
-  ['mouse_5fdouble_5fclick_5fevent',['Mouse_double_click_event',['../classcppurses_1_1Mouse__double__click__event.html',1,'cppurses']]],
-  ['mouse_5fevent',['Mouse_event',['../classcppurses_1_1Mouse__event.html',1,'cppurses']]],
-  ['mouse_5fmove_5fevent',['Mouse_move_event',['../classcppurses_1_1Mouse__move__event.html',1,'cppurses']]],
-  ['mouse_5fpress_5fevent',['Mouse_press_event',['../classcppurses_1_1Mouse__press__event.html',1,'cppurses']]],
-  ['mouse_5frelease_5fevent',['Mouse_release_event',['../classcppurses_1_1Mouse__release__event.html',1,'cppurses']]],
-  ['mouse_5fwheel_5fevent',['Mouse_wheel_event',['../classcppurses_1_1Mouse__wheel__event.html',1,'cppurses']]],
+  ['menu_5fstack',['Menu_stack',['../classcppurses_1_1Menu__stack.html',1,'cppurses']]],
+  ['mouse',['Mouse',['../structcppurses_1_1Mouse.html',1,'cppurses']]],
+  ['move',['Move',['../structcppurses_1_1Mouse_1_1Move.html',1,'cppurses::Mouse']]],
   ['move_5fevent',['Move_event',['../classcppurses_1_1Move__event.html',1,'cppurses']]]
 ];
