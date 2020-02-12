@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: install libncursesw5-dev
+      run: sudo apt install -y libncursesw5-dev
+    - uses: actions/checkout@v2
+    - name: checkout submodules
+      run: git submodule update --init --recursive
+    - name: create build directory
+      run: mkdir ${{runner.workspace}}/build
+    - name: configure
+      working-directory: ${{runner.workspace}}/build
+      run: cmake -DCMAKE_BUILD_TYPE=Release $GITHUB_WORKSPACE
+    - name: build
+      working-directory: ${{runner.workspace}}/build
+      run: cmake --build .
