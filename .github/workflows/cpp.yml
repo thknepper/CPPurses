@@ -3,7 +3,7 @@ name: C/C++ CI
 on: [push]
 
 jobs:
-  build:
+  build-ubuntu:
 
     runs-on: ubuntu-latest
     
@@ -21,3 +21,24 @@ jobs:
     - name: build
       working-directory: ${{runner.workspace}}/build
       run: cmake --build .
+
+  build-opensuse:
+    runs-on: ubuntu-latest
+    container:
+      image: opensuse/leap:15.2
+    steps:
+    - name: refresh software repos
+      run: zypper refresh -f
+    - name: install required software
+      run: zypper install --replacefiles -l -y --force-resolution --no-recommends -f cmake make gcc-c++ ncurses-devel git tar gzip
+    - uses: actions/checkout@v2
+    - name: checkout submodules
+      run: git submodule update --init --recursive
+    - name: create build directory
+      run: mkdir build
+    - name: configure
+      working-directory: build
+      run: cmake -DCMAKE_BUILD_TYPE=Release ..
+    - name: build
+      working-directory: build
+      run: cmake --build . --target all
