@@ -6,7 +6,16 @@ jobs:
   build-ubuntu:
 
     runs-on: ubuntu-latest
-    
+    strategy:
+      matrix:
+        compiler: [gcc, clang]
+        include:
+          - compiler: gcc
+            cc: gcc
+            cxx: g++
+          - compiler: clang
+            cc: clang
+            cxx: clang++
     steps:
     - name: install libncursesw5-dev
       run: sudo apt install -y libncursesw5-dev
@@ -17,7 +26,7 @@ jobs:
       run: mkdir ${{runner.workspace}}/build
     - name: configure
       working-directory: ${{runner.workspace}}/build
-      run: cmake -DCMAKE_BUILD_TYPE=Release $GITHUB_WORKSPACE
+      run: cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=${{ matrix.cxx }} $GITHUB_WORKSPACE
     - name: build
       working-directory: ${{runner.workspace}}/build
       run: cmake --build .
