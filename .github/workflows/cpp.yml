@@ -29,7 +29,7 @@ jobs:
       run: cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=${{ matrix.cxx }} $GITHUB_WORKSPACE
     - name: build
       working-directory: ${{runner.workspace}}/build
-      run: cmake --build .
+      run: cmake --build . --target demos
 
   build-opensuse:
     runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
       run: cmake -DCMAKE_BUILD_TYPE=Release ..
     - name: build
       working-directory: build
-      run: cmake --build . --target all
+      run: cmake --build . --target demos
