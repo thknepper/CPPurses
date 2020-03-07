@@ -19,6 +19,8 @@ jobs:
     steps:
     - name: install libncursesw5-dev
       run: sudo apt install -y libncursesw5-dev
+    - name: install googletest
+      run: sudo apt install -y googletest
     - uses: actions/checkout@v2
     - name: checkout submodules
       run: git submodule update --init --recursive
@@ -39,7 +41,7 @@ jobs:
     - name: refresh software repos
       run: zypper refresh -f
     - name: install required software
-      run: zypper install --replacefiles -l -y --force-resolution --no-recommends -f cmake make gcc-c++ ncurses-devel git tar gzip
+      run: zypper install --replacefiles -l -y --force-resolution --no-recommends -f cmake make gcc-c++ ncurses-devel git tar gzip gtest
     - uses: actions/checkout@v2
     - name: checkout submodules
       run: git submodule update --init --recursive
